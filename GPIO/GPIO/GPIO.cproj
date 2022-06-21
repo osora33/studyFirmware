@@ -122,6 +122,33 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="fnd1.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="input1.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Interrupt.C">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Interrupt2.C">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Interrupt3.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Interrupt4.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="led2.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="test1.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="timer.c">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="timer2.c">
       <SubType>compile</SubType>
     </Compile>
