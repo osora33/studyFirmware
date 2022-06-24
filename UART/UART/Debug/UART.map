@@ -357,9 +357,10 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800100       0x3e uart5.o
+                0x00800100       0x3d uart5.o
  *(.gnu.linkonce.r*)
                 0x0080013e                . = ALIGN (0x2)
+ *fill*         0x0080013d        0x1 
                 0x0080013e                _edata = .
                 0x0080013e                PROVIDE (__data_end, .)
 

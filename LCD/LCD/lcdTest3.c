@@ -47,7 +47,7 @@ int main(void)
 				Lcd_Pos(0, 0);
 				if(stop == 0){
 					Lcd_Clear();
-					sprintf(str1, "%d * %d = %d", i, j, i*j);
+					sprintf(str1, "gugu %d * %d = %d", i, j, i*j);
 					Lcd_STR(str1);
 					_delay_ms(1000);
 					j++;

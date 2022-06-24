@@ -189,7 +189,7 @@ int main(){
   e4:	df 93       	push	r29
   e6:	cd b7       	in	r28, 0x3d	; 61
   e8:	de b7       	in	r29, 0x3e	; 62
-  ea:	c1 56       	subi	r28, 0x61	; 97
+  ea:	c0 56       	subi	r28, 0x60	; 96
   ec:	d1 09       	sbc	r29, r1
   ee:	0f b6       	in	r0, 0x3f	; 63
   f0:	f8 94       	cli
@@ -206,8 +206,8 @@ int main(){
  104:	0d 92       	st	X+, r0
  106:	8a 95       	dec	r24
  108:	e1 f7       	brne	.-8      	; 0x102 <main+0x20>
-	unsigned char text2[] = "INPUT >> ";
- 10a:	8a e0       	ldi	r24, 0x0A	; 10
+	unsigned char text2[] = "INPUT : ";
+ 10a:	89 e0       	ldi	r24, 0x09	; 9
  10c:	e4 e3       	ldi	r30, 0x34	; 52
  10e:	f1 e0       	ldi	r31, 0x01	; 1
  110:	de 01       	movw	r26, r28

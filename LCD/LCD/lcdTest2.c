@@ -19,6 +19,7 @@ int main(void)
 	Lcd_Init();
 	_delay_ms(1000);
 	Lcd_Clear();
+	_delay_ms(100);
 	
     while (1) 
     {
