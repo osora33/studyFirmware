@@ -22,8 +22,13 @@ int i = 0;
 
 SIGNAL(INT4_vect){
 	cli();
-	if(keyMode == true) keyMode = false;
-	else if(keyMode == false) keyMode = true;
+	if(keyMode == true){
+		keyMode = false;
+	}
+	else if(keyMode == false){
+		keyMode = true;
+		init_keypad();
+	}
 	_delay_ms(50);
 	i = 0;
 	bell(0);
@@ -122,12 +127,12 @@ void proc_keyMode(){
 	char input[5];
 	
 	key = keyscan();
-	//한번 누른 키가 while문을 한번 돌아도 계속 남아있으므로 초기화해주기
 	
 	if(key == 0){
 		printLcd(str);
 	}else{
 		input[i] = key;
+		//한번 누른 키가 while문을 한번 돌아도 계속 남아있으므로 초기화해주기
 		init_keypad();
 		
 		if(!str_cmp(str, "Insert PW : ")){
